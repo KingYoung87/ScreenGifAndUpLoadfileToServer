@@ -1,0 +1,10 @@
+ffmpeg -i SGif20170516150152.gif -i logo.png -filter_complex "overlay=x=0:y=0" -f gif 123.gif
+
+
+ffmpeg -i SGif20170516150152.gif -vf "movie= E:\\Git_Programe\\C++\\ScreenGif\\Debug\\vc120\\gif\\logo.png,scale=30:15[watermask];[in][watermask] overlay=10:10[out]" -f gif 151.gif
+
+
+cd "E:/Git_Programe/C++/ScreenGif/Debug/vc120/gif/" & ffmpeg.exe -i E:/Git_Programe/C++/ScreenGif/Debug/vc120/gif/SGif20170516150152.gif -vf "movie = logo.png, scale = 30:15[watermask]; [in][watermask] overlay = 10:10[out]" -f gif E:/Git_Programe/C++/ScreenGif/Debug/vc120/gif/SGif20170516150152_1.gif
+
+
+E: & cd "Git_Programe/C++/ScreenGif/Debug/vc120/gif/" & ffmpeg.exe -i E:/Git_Programe/C++/ScreenGif/Debug/vc120/gif/SGif20170516150152.gif -vf "movie = logo.png, scale = 30:15[watermask]; [in][watermask] overlay = 10:10[out]" -f gif E:/Git_Programe/C++/ScreenGif/Debug/vc120/gif/SGif20170516150152_4.gif

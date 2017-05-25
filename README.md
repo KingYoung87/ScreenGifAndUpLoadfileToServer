@@ -1,0 +1,2 @@
+# ScreenGifAndUpLoadfileToServer
+windows下选择区域进行截取，合成GIF，叠加水印logo，并且可以上传服务器，获得上传GIF的网络地址
